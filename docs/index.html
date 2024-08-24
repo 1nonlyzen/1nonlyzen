@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15 Months of Love</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #ffb3b3, #ff4d4d);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    h1, h2, p {
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1, h2 {
+      font-size: 1.8rem;
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      padding: 0 10px;
+      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+      white-space: pre-line; /* This ensures line breaks are preserved */
+    }
+    .heart-button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px 0;
+      background-color: #ff3366;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform 0.3s;
+      box-shadow: 0px 4px 15px rgba(255, 51, 102, 0.6);
+    }
+    .heart-button:hover {
+      transform: scale(1.1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .sparkle-effect {
+      font-size: 1.6rem;
+      animation: sparkle 3s infinite ease-in-out;
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    @keyframes sparkle {
+      0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+      50% { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+    }
+    .floating-hearts, .floating-15th {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .floating-hearts div, .floating-15th div {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      animation: float 8s linear infinite;
+    }
+    .floating-hearts div {
+      background: url('https://img.icons8.com/emoji/48/000000/red-heart.png') no-repeat center;
+    }
+    .floating-15th div {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      line-height: 40px;
+      background: none;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200%);
+        opacity: 0;
+      }
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .heart-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      .floating-hearts div, .floating-15th div {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Intro -->
+  <div id="page1">
+    <h1>HAPPY MONTHSARY MY LOVE!</h1>
+    <p>Here's a little something for you</p>
+    <a href="#page2" class="heart-button">❤️</a>
+  </div>
+
+  <!-- Page 2: Poem -->
+  <div id="page2" style="display:none;">
+    <h2>Syempre tula muna bago message</h2>
+    <p>Fifteen months of endless bliss,<br>
+    In every smile, in every kiss.<br>
+    You are my joy, my endless light,<br>
+    My comfort in the darkest night.<br><br>
+    With you, love feels soft and true,<br>
+    In your eyes, I see skies of blue.<br>
+    My heart is yours, forever and more,<br>
+    To cherish and hold, as love’s sweet core.</p>
+    <a href="#page3" class="heart-button">Eto na, message na</a>
+  </div>
+
+  <!-- Page 3: First Message -->
+  <div id="page3" style="display:none;">
+    <h2>15 months of love with you ♡</h2>
+    <p>Happy 15th monthsary my love!<br>
+    Sobrang thankful ako na dumating tayo sa punto na ito at lagi kong i-che-cherish ang ating pagmamahalan sa isa't isa dahil ang relationship na ito ay isa sa pinakamalaking biyaya na binigay sa atin ni Lord. Masaya ako na nandito ka, sa tabi ko, sa braso ko, sa piling ko, at syempre sa loob ng puso't isipan ko. Alam ko minsan na nag aaway away tayo pero kahit anong mangyari di natin papalagpasin ang mga yan at patuloy tayong matututo at mag i-improve sa bawat pagtatalo natin sa isa't isa.</p>
+    <a href="#page4" class="heart-button">Next</a>
+  </div>
+
+  <!-- Page 4: Continuation -->
+  <div id="page4" style="display:none;">
+    <p>Every day with you feels like a beautiful journey filled with laughter, growth, and endless love. We’ve shared so many precious moments together, and I cherish each one more than words can express. You make my world brighter, my days happier, and my heart fuller. To me, you are one of a kind.</p>
+    <a href="#page5" class="heart-button">Next</a>
+  </div>
+
+  <!-- Page 5: The Little Prince Message -->
+  <div id="page5" style="display:none;">
+    <p>In the novelette "The Little Prince," you serve as my rose. The Little Prince had also had a rose which whom he cherished a lot because she is unique to him, and that goes the same as you to me. You are unique, my love. Although when he found out that there are different roses once he explored the world, he still considered his own rose unique and special. Just like you, kahit madaming babae dyan, no one will ever come close to you because you are special to me. What makes you different and special from the other girls is the time and the connection that I have for you.</p>
+    <a href="#page6" class="heart-button">Next</a>
+  </div>
+
+  <!-- Page 6: Final Message -->
+  <div id="page6" style="display:none;">
+    <h2 class="sparkle-effect">Happy 15th monthsary my love, you'll always be the one.</h2>
+    <div class="floating-hearts">
+      <div style="left: 10%; animation-delay: 0s;"></div>
+      <div style="left: 40%; animation-delay: 2s;"></div>
+      <div style="left: 70%; animation-delay: 4s;"></div>
+    </div>
+    <div class="floating-15th">
+      <div style="left: 20%; animation-delay: 1s;">15th</div>
+      <div style="left: 50%; animation-delay: 3s;">15th</div>
+      <div style="left: 80%; animation-delay: 5s;">15th</div>
+    </div>
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('div[id^="page"]');
+    document.querySelectorAll('.heart-button').forEach((button, index) => {
+      button.addEventListener('click', function() {
+        pages[index].style.display = 'none';
+        pages[index + 1].style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
